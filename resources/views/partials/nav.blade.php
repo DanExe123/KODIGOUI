@@ -10,7 +10,7 @@
   
   </div>
 </div>
-<nav class="absolute top-8 right-0 w-full px-6 py-4 bg-transparent flex justify-end items-center space-x-6 ">
+<nav class="absolute top-9 right-0 w-full px-6 py-4 bg-transparent flex justify-end items-center space-x-6 ">
 
 
     <x-button size="small" class="!w-[130px] hover:rotate-1 hover:scale-110"
