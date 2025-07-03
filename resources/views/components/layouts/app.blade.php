@@ -54,6 +54,7 @@
         x-transition:leave="transition-opacity duration-500 ease-in"
         class="transition-opacity duration-700 ease-in-out"
       >
+      
         {{ $slot }}
       </div>
     </div>

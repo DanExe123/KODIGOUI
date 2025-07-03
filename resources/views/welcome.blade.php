@@ -146,6 +146,42 @@
     </template>
   </div>
   
+  <!-- 🚧 Development Notice (Dismissible with localStorage) -->
+<div 
+x-data="{
+  showNotice: localStorage.getItem('kodigoNoticeClosed') !== 'true',
+  closeNotice() {
+    this.showNotice = false;
+    localStorage.setItem('kodigoNoticeClosed', 'true');
+  }
+}" 
+x-show="showNotice" 
+x-transition 
+class="w-full text-center py-3 bg-[#000034] text-white text-sm font-medium z-50 shadow-md fixed top-0 left-0"
+>
+<div class="flex items-center justify-center gap-2 px-4">
+  <span>🚧 <strong>KodigoUI</strong> is currently in ongoing development. Installation is not yet available.</span>
+  <button 
+    @click="closeNotice" 
+    class="ml-4 text-white bg-red-600 hover:bg-red-700 px-2 py-1 rounded text-xs"
+  >
+    Close
+  </button>
+</div>
+</div>
+
+<!-- 🚧 Development Notice (Dismissible - no localStorage) -->
+<div 
+  x-data="{ showNotice: true }" 
+  x-transition 
+  class="w-full text-center py-3 bg-[#000034] text-white text-sm font-medium z-50 shadow-md fixed top-0 left-0"
+>
+  <div class="flex items-center justify-center gap-2 px-4">
+    <span>🚧 <strong>KodigoUI</strong> is currently in ongoing development. Installation is not yet available.</span>
+  
+  </div>
+</div>
+
   @include('partials.nav')
   @include('partials.content')
 </body>

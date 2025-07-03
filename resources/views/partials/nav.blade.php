@@ -1,4 +1,18 @@
-<nav class="absolute top-0 right-0 w-full px-6 py-4 bg-transparent flex justify-end items-center space-x-6 ">
+
+<!-- 🚧 Development Notice (Dismissible - no localStorage) -->
+<div 
+  x-data="{ showNotice: true }" 
+  x-transition 
+  class="w-full text-center py-3 bg-[#000034] text-white text-sm font-medium z-50 shadow-md fixed top-0 left-0"
+>
+  <div class="flex items-center justify-center gap-2 px-4">
+    <span>🚧 <strong>KodigoUI</strong> is currently in ongoing development. Installation is not yet available.</span>
+  
+  </div>
+</div>
+<nav class="absolute top-8 right-0 w-full px-6 py-4 bg-transparent flex justify-end items-center space-x-6 ">
+
+
     <x-button size="small" class="!w-[130px] hover:rotate-1 hover:scale-110"
     @mouseenter="$el.classList.add('animate-pulse')"
     @mouseleave="$el.classList.remove('animate-pulse')"

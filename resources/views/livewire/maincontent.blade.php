@@ -45,7 +45,7 @@
               1. Execute the following command to seamlessly integrate KodigoUI into your project:
             </p>
             <pre class="bg-[#000034] text-sm text-gray-100 p-3 rounded mt-2 overflow-auto"><code>composer require KodigoUI/KodigoUI</code></pre>
-      
+      <!--
             <p class="text-[16px] leading-[1.32] font-normal text-gray-700 mt-4">
               2. Insert the KodigoUI tag <strong>above</strong> the Alpine.js script tag in your page layout:
             </p>
@@ -64,7 +64,7 @@
               5. Insert the KodigoUI tag <strong>above</strong> the Alpine.js script tag in your page layout:
             </p>
             <pre class="bg-[#000034] text-sm text-gray-100 p-3 rounded mt-2 overflow-auto"><code>&lt;x-kodigo-ui /&gt;</code></pre>
-      
+          -->
           </div>
       
           <div class="p-4 border rounded-lg shadow-sm bg-green-50">
